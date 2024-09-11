@@ -142,7 +142,7 @@ export async function verifyAuthentication(
 		});
 		if (!payload.sub) return;
 		const authInfo: AuthInfo = {
-			uploaderEmail: payload.email,
+			email: payload.email,
 			sub: payload.sub!,
 		};
 		return authInfo;

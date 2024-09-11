@@ -12,7 +12,6 @@ export default {
 			case 'DELETE':
 				break;
 			case 'OPTIONS': {
-				console.log('options');
 				return createOptionResponse(env.CORS_ALLOW);
 			}
 			default:

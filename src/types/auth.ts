@@ -10,6 +10,6 @@ type JWTPayloadData = {
 export type JWTPayloadCustom = JWTPayload & JWTPayloadData;
 
 export type AuthInfo = {
-	uploaderEmail: string;
+	email: string;
 	sub: string;
 };

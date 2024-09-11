@@ -4,7 +4,7 @@ import type { AuthInfo, CustomMetadata } from '@/types';
 
 export function matchesOriginalUploader(metadata: CustomMetadata, authInfo: AuthInfo): boolean {
 	// authorize
-	return metadata.sub == authInfo.sub && metadata.uploaderEmail == authInfo.uploaderEmail;
+	return metadata.sub == authInfo.sub && metadata.email == authInfo.email;
 }
 
 export async function isAuthorizedUser(
